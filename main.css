@@ -1,0 +1,72 @@
+html, body {
+	background: white;
+	margin: 0;
+}
+
+body {
+	font: 100% "Lucida Sans Unicode", Veranda, Geneva;
+	background-color: #FFC38A;
+}
+.Head {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	align:center;
+	background:#F55D4D;
+
+}
+.Palette {
+	table-layout: fixed;
+
+}
+
+table {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+tr, td {
+	padding: 15px;
+	margin: 25px;
+	font-size: "5em";
+}
+
+h1 {
+	color: #FFDB8C;
+	text-align: center;
+}
+
+ol {
+	list-style: square;
+}
+
+ul {
+	list-style: circle;
+	font-style: italic;
+}
+
+.Color1 {
+	color: #E1760F;
+	font-size: "900%";
+}
+.Color2 {
+	color: #F55D4D;
+	font-size: "900%";
+}
+.Color3 {
+	color: #FFDB8A;
+	font-size: "900%";
+}
+.Color4 {
+	color: #C52615;
+	font-size: "900%";
+}
+
+footer {
+	display: block;
+	align: bottom;
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
