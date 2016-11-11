@@ -1,0 +1,17 @@
+.ImgHead {
+	background-color: #a77658;
+	background-position: bottom center;
+	background-size: cover;
+	height: 100px;
+}
+
+.row {
+	width: 60%;
+	background-color: #d3c99b;
+	text-decoration-color: #a77658
+}
+
+.ChapTitle {
+	background-color: #a77658;
+	max-height: 40px;
+}
