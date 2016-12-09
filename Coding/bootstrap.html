@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project 0 - Coding - Bootstrap</title>
+
+    <link rel="shortcut icon" href="../favicon.ico" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Project 0</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../Physical_Side">Physical Side</a>
+                    </li>
+                    <li class="active">
+                        <a href="../Coding">Coding</a>
+                    </li>
+                    <li>
+                        <a href="../Hosting">Hosting</a>
+                    </li>
+                    <li>
+                        <a href="../Advertising">Advertising</a>
+                    </li>
+                    <li>
+                        <a href="../The_Web">The Web</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Project 0
+                    <small>Coding</small>
+                </h1>
+
+                <ul class="list-inline">
+                Home / Coding / 
+                    <li>
+                        <a href="semantic_versioning">Semantic Versioning</a>
+                    </li>
+                    <li>
+                        <a href="text_editors">Text Editors</a>
+                    </li>
+                    <li>
+                        <a href="utf-8">UTF-8</a>
+                    </li>
+                    <li>
+                        Bootstrap
+                    </li>
+                    <li>
+                        <a href="npm">NPM</a>
+                    </li>
+                    <li>
+                        <a href="grunt_js">Grunt.js</a>
+                    </li>
+                </ul>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-4">
+                <a href="../Training"><img class="img-responsive" src="../Img/bootstrap.png"></a>
+            </div>
+
+            <div class="col-md-8">
+                <h3>TOPIC: Bootstrap</h3>
+                <p>Behold, my scattered notes on Bootstrap. Clicking the Bootstrap logo to the left will link to a directory of the test files for Bootstrap.</p>
+
+            <blockquote>
+                <p><strong>LECTURE: BOOTSTRAP</strong></p>
+
+                <p>Bootstrap is framework to build from (mobile first and responsive design, battle tested, modern web tech) <br>
+                Framework: Way to organize code following structure that enables abilities (built in CSS, JavaScript <br>
+                Bootstrap: excellent for small, quick projects, prototyping and scaffolding sites, and great for larger projects (if so; customize your install)</p>
+
+                <p>Basic/Advanced installation<br>
+                Required jQuery </p>
+
+                <p>Creating basic template using CDN<br>
+                Download Bootstrap 3 <br>
+                BS comes with a 12-column grid accessed through CSS classes<br>
+                <p>Three key concepts: <i>containers, rows, columns</i> <br>
+                    &emsp;<strong>Container</strong>: controls layout and adds padding <br>
+                        &emsp;2 types: fixed and fluid. Fluid adjusts to browser size <br>
+                &emsp;&emsp;&emsp;Fixed-width comes with 15px padding on each side and adjusts to media query breakpoints <br>
+
+                &emsp;<strong>Rows</strong>: horizontal groups of columns, place within container. Should always include columns, and gets rid of container padding <br>
+
+                &emsp;<strong>Columns</strong>: 30px gutters(15px ea side) <br>
+                    &emsp;Use col-SIZE-SPAN <br>
+                        &emsp;&emsp;&emsp;Size: when it stacks <br>
+                        &emsp;&emsp;&emsp;SPAN: how many columns <br>
+                        &emsp;&emsp;&emsp;&gt;12 columns wrap</p>
+                
+                <p><table border="2">
+                    <tr>
+                        <td>
+                        </td>
+                         <td>
+                            Extra small <br>&lt;768px
+                        </td>
+                         <td>
+                            Small <br>&gt;&#61;768px
+                        </td>
+                         <td>
+                            Medium <br> &gt;&#61;992px
+                        </td>
+                         <td>
+                            Large <br> &gt;&#61;1200px
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Container
+                        </td>
+                        <td>
+                            Auto
+                        </td>
+                        <td>
+                            750px
+                        </td>
+                        <td>
+                            970px
+                        </td>
+                        <td>
+                            1170px
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Size
+                        </td>
+                        <td>
+                            .col-xs-
+                        </td>
+                        <td>
+                            .col-sm-
+                        </td>
+                        <td>
+                            .col-md-
+                        </td>
+                        <td>
+                            .col-lg-
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Column width   
+                        </td>
+                        <td>
+                            Auto
+                        </td>
+                        <td>
+                            &#126;62px
+                        </td>
+                        <td>
+                            &#126;81px
+                        </td>
+                        <td>
+                            &#126;97px
+                        </td>
+                    </tr>
+                </table></p>
+
+                <p><code>class&#61;”h1”</code> when attributed to both <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> give impression of headline text elements, even inline <code>&lt;br&gt;</code> <br>
+
+                <code>&lt;small&gt;</code> w/in headlines or body text, but headers have more styles[has own style in BS] <br>
+
+                <code>class&#61;"lead"</code> makes text stand out slightly <br>
+
+                <code>&lt;mark&gt;</code> add a highlight <br>
+
+                <code>&lt;s&gt;</code> strikethrough, or <code>&lt;del&gt;</code>, there is a semantic difference <br>
+
+                <code>&lt;ins&gt;</code> shows text that has been inserted <br>
+
+                <code>&lt;em&gt;</code> for emphasis <br>
+
+                <code>&lt;abbr&gt;</code> for abbreviations, use <code>&lt;abbr title=”Word”&gt;Wd.&lt;/abbr&gt;</code> to have rollover of Word <br>
+
+                <code>class&#61;"initialism"</code> for companies helps <br>
+
+                <code>&lt;blockquote&gt;</code> also can have child &lt;footer&gt;</code> tags AND <code>blockquote class&#61;"blockquote-reverse"</code> to change to right quote <br>
+
+                <code>&lt;dl class&#61;”dl-horizontal&gt;</code> tabs list to the left and gives it its own section <br>
+
+                <code>&lt;code&gt;</code> tag designates it as a code (and &lt; and &gt; are how to format brackets as code) <br>
+
+                <code>&lt;kbd&gt;</code> displays commands as keyboard commands <br>
+
+                <code>&lt;var&gt;</code> displays them as...variables <br>
+
+                <code>&lt;pre&gt;</code> shows code as preview <br>
+
+                <code>&lt;samp&gt;</code> like <code>&lt;pre&gt;</code> but no box <br>
+
+                <code>&lt;class&#61;”btn btn-defaut”&gt;</code> for buttons</p>
+
+
+                <code>&lt;table class&#61;”table table-____&gt;</code>
+                    <code>Striped</code>:repeating color patterns
+                    <code>Bordered</code>: bordered table
+                    <code>Condensed</code>: smaller
+
+                <code>&lt;div class&#61;”table-responsive”&gt;</code> makes it scrollable when reduced in size <br>
+
+                <code>class&#61;”img-responsive”</code> to autoadjust  <br>
+
+                <code>img-rounded</code> OR <code>circle</code> for borders <br>
+
+                <code>class&#61;"clearfix"</code> <code>"hidden"/"show"/"invisible"</code> to hide/display/invis <br>
+
+                <code>class&#61;"sr only"</code> for screenreader (blind) exclusive 'viewing' </p>
+
+                <p><strong>Responsive Utilities:</strong> <br>
+                    &emsp;Visibility @ breakpoints/print <br>
+                    &emsp;VISIBILITY-SIZE(-DISPLAY) <br>
+                        &emsp;&emsp;&emsp;Vis: visible or hidden <br>
+                        &emsp;&emsp;&emsp;Size: xs, sm, md, lg, print <br>
+                        &emsp;&emsp;&emsp;Display: block, inline, inline-block, print </p>
+
+                <p>Labels should match input fields (<code>&lt;label</code> for <code>&#61;"inputBlank">&lt;/&gt; &lt;input type____ id&#61;"inputBlank"</code></p>
+
+
+                <p><strong>Form-group</strong>
+                Checkbox class has input embedded in label &lt;l&lt;i&gt;/l&gt; unlike form-group has them side-by-side <br>
+                "Radio" (in BS)changes checkbox type. Checkboxes and Radios having the same  [name&#61;””] makes them exclusive, only one or other can be checked <br>
+                Disabled class makes the class disabled(duh) <br>
+                In Div classes:  has-warning[/error/success] class changes input box outline color <br>
+                Control-label also gives label same color</p>
+
+
+                <p><strong>Glyphicons.com</strong> <br>
+                &emsp;&emsp;(Halflings on site=glyphicon in BS) <br>
+                By placing <code>form-group-[sm/md/lg]</code> into label classes, you can affect those elements, or, if on a form-group class, affect the entire class of elements &lt;div=”form-group form-group-sm”&gt;</p>
+
+
+                <p><strong>NAVBAR</strong> <br>
+                &emsp;&emsp;&emsp;Navbar-stacked <br>
+                &emsp;&emsp;&emsp;Navbar-default/inverse <br>
+                &emsp;&emsp;&emsp;navbar-fixed-top/bottom</p>
+
+
+<p><code>Div class="Jumbotron"</code> for separate heading for basics <br>
+
+<strong>Labels</strong>:     
+<code>Span class="label label-default/primary/success/info/warning/danger"</code> <br>
+&emsp;&emsp;&emsp;Size contextual for headings as well <br>
+<strong>Brand</strong>:
+<code>span class="brand"</code> can show counts of things, one basic color but will invert color within buttons <br>
+
+<code>&lt;div class="panel panel-primary/etc"&gt;</code> <br>
+
+<code>&lt;div class="well (well-lg/etc)"&gt;</code></p>
+
+            </blockquote>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+
+       <!-- Related Topics Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h2 class="page-header">Related Topics</h2>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-2 col-sm-offset-1">
+                <a href="semantic_versioning">
+                    <img class="img-responsive portfolio-item" src="../Img/semver.png" alt="Semantic Versioning">
+                </a>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-2">
+                <a href="text_editors">
+                    <img class="img-responsive portfolio-item" src="../Img/texteditors.jpg" alt="Text Editors">
+                </a>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-2">        
+                <a href="utf-8">
+                    <img class="img-responsive portfolio-item" src="../Img/utf8.jpg" alt="UTF-8">
+                </a>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-2">
+                <a href="npm">
+                    <img class="img-responsive portfolio-item" src="../Img/npm.jpg" alt="NPM">
+                </a>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-2">
+                <a href="grunt_js">
+                    <img class="img-responsive portfolio-item" src="../Img/grunt.jpg" alt="Grunt.js">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Other Subjects</h3>
+            </div>
+
+            <div class="col-sm-3 col-sm-offset-0 col-xs-5 col-xs-offset-1">
+                <a href="../Physical_Side">
+                    <img class="img-responsive portfolio-item" src="../Img/physide.jpg" alt="Physical Side">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-5">
+                <a href="../Hosting">
+                    <img class="img-responsive portfolio-item" src="../Img/hosting.jpg" alt="Hosting">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-sm-offset-0 col-xs-5 col-xs-offset-1">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="../Img/advertising.jpg" alt="Advertising">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-5">
+                <a href="../The_Web">
+                    <img class="img-responsive portfolio-item" src="../Img/theweb.jpg" alt="The Web">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Project 0 2016 _ Credit to Portfolio_Item</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

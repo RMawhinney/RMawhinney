@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project 0 - The Web - Web Tech</title>
+
+    <link rel="shortcut icon" href="../favicon.ico" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Project 0</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../Physical_Side">Physical Side</a>
+                    </li>
+                    <li>
+                        <a href="../Coding">Coding</a>
+                    </li>
+                    <li>
+                        <a href="../Hosting">Hosting</a>
+                    </li>
+                    <li>
+                        <a href="../Advertising">Advertising</a>
+                    </li>
+                    <li class="active">
+                        <a href="../The_Web">The Web</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Project 0
+                    <small>The Web</small>
+                </h1>
+                
+                    <ul class="list-inline">
+                        <li>Home</li> / <li>The Web</li> / 
+                    <li>
+                        <a href="web_2.0">Web 2.0</a>
+                    </li>
+                    <li>
+                        Web Tech
+                    </li>
+                    <li>
+                        <a href="sites_vs_apps">Sites vs Apps</a>
+                    </li>
+                    <li>
+                        <a href="darkweb">Darkweb</a>
+                    </li>
+                    <li>
+                        <a href="ui-ux">UI/UX</a>
+                    </li>
+                    <li>
+                        <a href="chrome_dev_summit">Chrome Dev Summit</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-4">
+                <img class="img-responsive" src="../Img/webtech.jpg">
+            </div>
+
+            <div class="col-md-8">
+                <h3>TOPIC: Web Tech</h3>
+                <p>Behold, my scattered notes on Web Technology.</p>
+
+                <blockquote>
+                    <p><strong>Web Technology Fundamentals</strong>
+                    <i>GOALS</i>
+                    Cover terms + techniques surrounding web technology
+                    Understand that technology makes it easier to comprehend why things are done a certain way
+                    Take the mystery out of abbreviations and acronyms
+                    Provide a high level overview of how the web works</p> <br>
+                    <p><strong>HOW THE WEB WORKS</strong> <br>
+                    <ul><li>The Internet: massive network of millions of computers across the world</li>
+                    <li>Email</li>
+                    <li>SMS</li>
+                    <li>App data</li>
+                    <li>The web:</li></ul> <br>
+                    <strong>The World Wide Web</strong>:  way of transmitting data over Internet using HTTP Protocol and HTML <br>
+                    Series of interactions between Clients and Servers</p> <br>
+                    <br>
+                    <p><strong>Clients</strong>: devices that request and render web content: browsers, mobile apps, screen readers, and content aggregators <br>
+                    <strong>Servers</strong>: applications that deliver content/service to clients. Important for programming or hosting</p> <br>
+                     <br>
+                    <p><strong>CLICKING  A LINK/URL:</strong> <br>
+                    <i>Uniform Resource Locator</i> <strong>(URL)</strong> passed to <i>Domain Name Server</i> <strong>(DNS)</strong> which translates the URL into an IP address.
+                    Browser then uses IP address to locate Host Server and send request for content. Depending on filetype:
+                    For static sites: HTML text is sent to browser where it is rendered for user, while CSS/image requests sent and resources downloaded, and content rendered. Client-side content also rendered here
+                    For dynamic sites: Requests processed by web app (like PHP, .NET or Ruby), web server processes page and appropriate data is returned to browser to be rendered</p>
+                    <br>
+                    <p><strong>DNS</strong> <br>
+                    Unique IPs to identify location and unique domain name for IPs.
+                    DNS=phone book of the internet. Hosting company usually associates these for you <br>
+                    Local ISP’s default DN <br>
+                    Root name servers: knows all name servers for “top level domains” <br>
+                    DNS caching: if you’ve visited recently, the DNS remembers IP on default</p>
+                    <br>
+                    <p><strong>WHY DNS MATTERS</strong> <br>
+                    &emsp;&emsp;If your site isn’t registered properly with a DNS, no one will be able to find you <br>
+                    &emsp;&emsp;Multi-name sites need to point to the proper IP <br>
+                    &emsp;&emsp;Make sure you’re aware of who site ownership is assigned to <br>
+                    &emsp;&emsp;DNS caching can take up to 24 hours</p>
+                     <br>
+                    <p><strong>Internet Protocols</strong>: simple languages that let computers share info with each other; The Internet Protocol Suite <br>
+                    Application Layer: HTTP, FTP, SMTP, DNS, RIP, SNMP <br>
+                    ^Link Layer ^:  Wireless Lan, Ethernet, ATM^ <br>
+                    ^Transport Layer: TCP, UDP^ <br>
+                    ^Internet Layer: IPv4, IPv6^ </p> 
+                    <br>
+                    <p><strong>TCP/IP</strong>: Transmission Control Protocol and Internet Protocol: created 1973, main protocol suite used to exchange data over internet 
+                    <br>
+                    <p><strong>HyperText Transfer Protol/HTTP</strong>: standard protocol for transferring data over WWW. “stateless protocol”, discarded after use: NOTHING about request remembered, like persistent data for browsing <br>
+                    -Can be handled through Cookies (text files written on client machine), scripting languages [JavaScript] Variables stored on server or server based Session Management. 
+                    <br>
+                    <p><strong>COMMON WEB PROTOCOLS</strong>
+                    <ul><li>FTP: File Transfer Protocol; enables transfer of large files [connects to File Server]</li>
+                    <li>SMTP: Simple Mail Transfer Protocol; used to send mail [ISP for email;; in most clients, SMPT sends, Post Office Protocol/POP receives]</li>
+                    <li>RTP: Real-Time Transfer Protocol; standard for audio/video [voice over/chat]</li></ul>
+                    <strong>HTTPS (HTTP Secure)</strong>: Layer of security protocol along with HTTP. Important to know when to discern</p>
+                    <br>
+                    <p>Anatomy of a Uniform Resource Locator/URL: specialized string of characters that identifies location of a desired resource <br>
+                    <i>http://www.lynda.com/</i> <br>
+                    http: &emsp;&emsp;&emsp;&emsp;&emsp;protocol; tells browser which protocol to use
+                    //www.lynda.com &emsp;&emsp;&emsp;&emsp;&emsp;Resource Name <br>
+                    Syntax(//)           subdomain(www)       Domain(lynda)              Top-level domain(.com)</p>
+                     <br>
+                    <p><strong>SUBDOMAIN:</strong> ‘folder’ your content is in on your server. Server admin can create as many subdomains as they wish</p>
+                     <br>
+                    <p><strong>HOW BROWSERS WORK</strong> <br>
+                    Use HTTP to communicate with web servers for content/data</p>
+                    <p><strong>[BROWSER COMPONENTS] </strong><br>
+                    &emsp;[Browser UI: Visual chrome, Address Bar, other visual elements] <br>
+                    &emsp;[Internal Engine: Directs communication across various components] <br>
+                    &emsp;[Rendering Engine: parses HTML and CSS and renders content on the screen] <br>
+                    &emsp;[Networking: HTTP and other protocol components] <br>
+                    &emsp;[Data Storage: Internal data storage and session management capabilities] <br>
+                    &emsp;[Javascript Interpreter: Internal Javascript engine, executes any client-side scripts]</p>
+                    <br>
+                    <strong>RENDERING ENGINES</strong>
+                    <ul><li>Trident: IE, Windows Mobile, AOL Browsers</li>
+                    <li>Gecko: Firefox, Firefox OS</li>
+                    <li>Presto: Opera 13, Opera Mini, Opera Mobile</li>
+                    <li>WebKit: Safari, webOS, Android</li>
+                    <li>Blink: Chrome, Opera 14+, Android 4.4+</li></ul></p>
+                    <br>
+                    <p>Web <i>standards</i> <br>
+                    -90s, Netscape Navigator vs Internet Explorer, Web Standards Project in ’98. Adoption of WWW Consortium (W3C) standardized web protocols by issuing recommendations for everyone. Standards-compliant browsers <br>
+                    IMPORTANCE: writing to standards ensures consistence across supporting browsers. Web standards continue to evolve, make sure you track their progress</p>
+                    <br>
+                    <p><strong>Web Server Basics</strong>
+                    Web Servers have IPs, catalogued in DNSes. In shared hosting environment, site is hosted on web server with multiple sites, while on dedicated plan, your site has its own server(s) <br>
+                    Stored as files and folders and executes depending on request <br>
+                    Web stack: groups of software that work in conjunction with each other to build and process web sites <br>
+                    -Operating system <br>
+                    Web Server <br>
+                    -Database Server: <br>
+                    -Programming Language <br>
+                    Acronyms: [LAMP//: Linux, Apache, MySQL, PHP], WAMP(windows etc), WISA, MARS br </p>
+                     <br>
+                    <p><strong>Front-End Design</strong>
+                    <ul>Visual layer of websites and applications
+                    <li>Typically the UI, layout, typography, images and other visual elements and their styling</li>
+                    <li>Can often refer to usability and user experience design as well</li>
+                    <li>Front end developer and designer overlap some, while designers typically are more the visual elements.</li>
+                    <li>Usually if front end you’ll focus on the parts that appeal to you the most</li>
+                    </ul></p> 
+                    <br>
+                    <p><strong>TYPICAL FRONT END DESIGNER ROLES</strong> <br>
+                    &emsp;&emsp;Creating mockups and developing visual standards <br>
+                    &emsp;&emsp;Structuring semantic content <br>
+                    &emsp;&emsp;Handling site accessibility <br>
+                    &emsp;&emsp;Site typography <br>
+                    &emsp;&emsp;Page layout <br>
+                    &emsp;&emsp;Form design <br>
+                    &emsp;&emsp;Interactivity and animation <br>
+                    &emsp;&emsp;Creating site imagery</p>
+                    <br>
+                    <p>HTML is standard language for structuring content. <br>
+                    History: HTML 2.0 “standard: in ’95. 3.0 in ’97 had proprietary features. 4.0 in ’99 stabilized standards. XHTML 1.0 in ’00 hoped to replace HTML. Work on XHTML 2.0 abandoned in ’09. (’04) <br>
+                    Web Hypertext Application Technology Working Group (WHATWG) forms evolution of HTML resulting in publishing HTML5 draft, which is adopted by W3C(’08)</p>
+                    <br>
+                    <p>HTML uses tags to give elements meaning. Learning means learning syntax of language, which elements supported, and basic structure of HTML documents. <br>
+                    <i>Simple HTML structure</i> <br>
+                    &emsp;-Document type declaration (DTD)/Doc tag at top <br>
+                    &emsp;-opening and closing tags surround everything involved <br>
+                    &emsp;-Head of HTML contains all nonvisual elements(metatags with keywords or page descriptions, links to resources like the CSS) External script libraries can control presentation, layout, and functionality <br>
+                    &emsp;-After head tag is Body tag. All visual elements; headings, paragraphs, lists, quotes, images, links etc <br>
+                    &emsp;[tag 1][tag 2][/tag2][/tag1]</p>
+                     <br>
+                    <p><strong>CSS Cascading Style Sheets</strong>: presentation language developed to control presentation of structured documents such as HTML files <br>
+                    Usually contained in an external file, with elements for a single page up to an entire site. Single file allows your entire site to follow a single style <br>
+                    External styles >Embedded styles >Inline styles. Styles can overwrite one another in case of conflict <br>
+                    <br>     
+                    Selector and Declaration. Selector tells browser which elements to style, and Declaration gives formatting instructions. All rules are set up as Property: values; with Properties separated by colon and semicolon to separate rules
+                    CSS BENEFITS
+                    <ul><li>Allows for modular design</li>
+                    <li>Faster development by centralization of design</li>
+                    <li>Creates portable styles that can be reused or changed when necessary</li>
+                    </ul></p>
+                    <br>
+                    <p><strong>CLIENT-SIDE SCRIPTING WITH JAVASCRIPT</strong>
+                    <i>JAVASCRIPT</i>: language for web design to add interactivity and application functionality. Created ’95 by Netscape to increase functionality of native browser, evolved into standard scripting language of the web <br>
+                    <u>NO RELATION TO PROG LANG JAVA</u> <br>
+                    -Allows designers to create interactive elements <br>
+                    -Can open new windows or give users feedback <br>
+                    -Can update, sort, and present data directly in browser <br>
+                    -No server interaction necessary <br>
+                     
+                    Suggestions for approaching Javascript <br>
+                    &emsp;&emsp;&emsp;Learn basics of native JavaScript first <br>
+                    &emsp;&emsp;&emsp;After that, experiment with popular Frameworks <br>
+                    &emsp;&emsp;&emsp;Have a strategy for providing fallback content for when JavaScript is disabled</p>
+                    <br>
+                    <p><strong>COMMON IMAGE CONCERNS</strong>
+                    -To create web images, it’s best to understand how images work within browsers
+                    -Often need to find balance between filesize and quality
+                    -Especially important with the rise of mobile devices with higher res displays
+                    Use graphic file formats browsers support</p>
+                     <br>
+                    <p><strong>Joint Photographic Experts Group (JPEG)</strong> <br>
+                    <ul><li>1992 standard; among most widely used</li>
+                    <li>High level of compression resulting in artifacts. JPEGs NOT recommended as source images</li></ul> 
+                    <br>
+                    <strong>Graphics Interchange Format (GIF)</strong> <br>
+                    <ul><li>8-bit graphics, meaning 256 colors</li>
+                    <li>Support transparency and limited animations</li></ul>
+                    <br>
+                    <strong>Portable Network Graphics (PNG)</strong> <br>
+                    <ul><li>1995; support transparencies as well with lossless compression</li>
+                    <li>Supports millions of colors, albeit with larger filesize</li></ul>
+                    <br>
+                    <strong>Scalable Vector Graphics (SVG)</strong> <br>
+                    <ul><li>Vector graphics format, can be scaled independently of resolution</li>
+                    <li>Written in SVG markup, making them editable via code and further styled in CSS. Widely supported</li></ul></p>
+                    <br> 
+                    <p>APIs (Application Programming Interfaces) <br>
+                    -set of instructions and standards for accessing services or components of a specific system <br>
+                    Open APIs=for other people to use <br>
+                    Mashups leverage multiple sites into a single app <br>
+                    API considerations <br>
+                    -Most APIs limit the amount of data or types of services they make available <br>
+                    -APIs evolve and change, make sure any service you’re using is monitored so that it continues to work as expected <br>
+                    -Have plan or fallbacks for when an API is not available</p> 
+                    <br>
+                    <p><strong>HTML5 APIs</strong> <br>
+                    Developed by WHATWG, then supported by W3C after chartering a working group <br>
+                    W3C took several APIs out of HTML5 and moved to their own specs, allowing APIs to mature independently and reduce the size of HTML5 <br>
+                    <ol>
+                    <li>MEDIA API <ol type="a">
+                    <li>Integrated API designed to control loading and playback of V/A</li>
+                    <li>Related to Text Track API that is used to control captions and subtitles</li></ol></li>
+                    <li>DRAG AND DROP API <ol type="a">
+                    <li>Allows you to enable drag and drop functionality on page elements</li>
+                    <li>Includes methods for handling drag and drop elements from outside the browser</li>
+                    </ol></li>
+                    <li>APP CACHE API <ol type="a">
+                    <li>Contains mechanisms for storing data offline</li>
+                    <li>Allows developers to create persistent applications that work even despite lack of internet</li>
+                    <li>Data can be synced when connections restored</ol></li>
+                    <li>GEOLOCATION API <ol type="a">
+                    <li>Standalone API associated with HTML5</li>
+                    <li>Allows developers to find the current location of users and react to it</ol></li>
+                    <li>CANVAS API <ol type="a">
+                    <li>Standalone associated with HTML5</li>
+                    <li>Gives ability to create a canvas area within the client that can be drawn or painted on</li>
+                    <li>Allows for the creation of complex games, animations, and other visual effects without the need for outside plugins
+                    </li></ol></li></ol></p>
+                    <br>
+                    <p><strong>WEB FONTS</strong> <br>
+                    Technology that allows automatic downloading and temporarily installation of fonts within browser <br>
+                    Most frequently used to describe the CSS @fontface rule. Some early issues: <br>
+                    &emsp;&emsp; Most font licenses included provisions which fontface would violate <br>
+                    &emsp;&emsp;Font foundries and type designers didn’t like giving users the ability to download fonts <br>
+                    &emsp;&emsp;Most formats at the time were very large, making implementation as a web resource difficult <br>
+                    &emsp;&emsp;Font rendering needs onscreen are different from print, and most formats weren’t designed for onscreen usage <br></p>
+                    <p><b>FONT FORMATS DESIGNED FOR WEBUSAGE</b> <br>
+                    <i>EOT Embedded OpenType</i> <br>
+                    <i>WOFF Web Open Font Format</i> <br></p>
+                    <p><b>WEB FONTS DEVELOPMENT</b> <br>
+                    Font foundries and designers worked with browser developers to find solutions <br>
+                    In many cases they have redesigned/modified fonts for onscreen use, such as: reducing glyphs, creating screen-specific hinting, and new licenses which allow use through web fonts <br>
+                    OPTIONS <br>
+                    &emsp;&emsp;&emsp;-Font hosting services, like Typekit <br>
+                    &emsp;&emsp;&emsp;-You can also host the font yourself if you have the license</p>
+                     <br>
+                    <p><b>SERVER-SIDE SCRIPTING</b>
+                    CGI scripts (Common Gateway Interface)
+                    <i>Concerns</i>: <br>
+                    <ul>
+                    <li>Processing done on server, which increases server load for high traffic sites   </li>
+                    <li>Processing data usually requires a page refresh on the browser  </li>
+                    <li>AJAX and other client-side bridges help enhance usability of server-side scripting  </li>
+                    </ul> 
+                    <br>
+                    <i>Importance of PHP</i>: DEVELOPMENT <br>
+                    <ul><li>1994: Rasmus lerdorf writes a set of CGI scripts to track visitors on his resume: opens source to public</li>
+                    <li>1997: Andi Gutmans and Zeev Suraski rewrote original and released PHP 3.0, named Hypertext Preprocessor</li>
+                    <li>Because it was free and open source it attracted a wide community of developers</li>
+                    <li>Paired with opensource tools Linux, Apache, and MySQL, PHP became backbone of millions of sites</li></ul> <br>
+                    Available on almost all hosting planes <br>
+                    Large pool of existing developers to work with <br>
+                    PHP relatively easy to learn with lots of available resources</p>
+                    <br>
+                    <p><b><i>OTHER SERVER LANGUAGES</i></b>
+                    <b>JSP: Java Server Pages</b>
+                    &emsp;Ø  Part of the larger Java Framework <br>
+                    &emsp;Ø  Scripts combination of XML and Java scriplets which can be difficult for beginners to work with <br>
+                    &emsp;Ø  JSP is widely used in enterprise-level sites, but can be used for any sized site or app <br>
+                    &emsp;Ø  Easy to find hosting, but be sure you’re choosing the proper Java platform <br>
+                    <b>.NET: Visual Basic.NET</b>
+                    &emsp;Ø  VB.NET is often referred to as .NET but is part of the larger .NET Framework <br>
+                    &emsp;Ø  Often used for large-scale, enterprise sized sites or applications <br>
+                    &emsp;Ø  Can only be hosted on Windows servers <br>
+                    <b>COLDFUSION</b>
+                    &emsp;Ø  Uses a markup language much like HTML <br>
+                    &emsp;Ø  A central administrator makes many tasks simple <br>
+                    &emsp;Ø  ColdFusion sites and apps often require less code than other languages <br>
+                    &emsp;Ø  CF hosts can be harder to find and more expensive than other choices <br>
+                    <b>PYTHON</b>
+                    &emsp;Ø  Powerful development language <br>
+                    &emsp;Ø  Has a variety of web-related libraries that make it easier to build sites and web-based apps <br>
+                    &emsp;Ø  Typically used to create larger sites/apps <br>
+                    <b>RUBY</b>
+                    &emsp;Ø  General-purpose development language <br>
+                    &emsp;Ø  Its popularity online is due largely to the Ruby-on-Rails web framework <br>
+                    &emsp;Ø  Rails has a simple syntax and powerful features, making it a popular choice for creating dynamic sites</p>
+                    <br>
+                    <p><b>CHOOSING A SERVER-SIDE LANGUAGE</b>
+                    Most designers choose platform based on cost, developer network, and ease of use <br>
+                    Find developer that can assist you in finding the right platform for your site <br>
+                    Research as many platforms as you can so that you can make an informed decision <br>
+                    <br> 
+                    Key value pair: set of values for easier data storage within browsers</p>
+                     <br>
+<p><b>DATABASES: SUPER USEFUL</b> <br>
+-Indexed DB and WebSQL
+<br> 
+<b>RELATIONAL DATABASES</b>
+Store data in tables that relate to each other based on item key values <br>
+Allows for compelx sorting and filtering of data <br>
+Oracle, MySQL, Sybase and other SQL-based databases ae popular relational databases <br>
+<b>NON-RELATIONAL DATABASES</b> <br>
+Alternative to relational databases that are growing in popularity <br>
+NoSQL databases store data individual flat, object-driven datasets <br>
+These are often faster to index, and scale easier than relational databases <br>
+MongoDB, CouchDB, SimpleDB, CouchBase, and Cassandra are popular NoSQL databases</p>
+<br>
+<p><b>USING SQL DATABASES</b> <br>
+SQL syntax is simple and logical, the basics are easy to learn <br>
+Select, insert, update, delets and other simple statements are used to retrieve data <br>
+Multiple versions of SQL with their own extensions <br>
+Queries usually written by other web app code <br>
+Dedicated apps like MySQL can help create and manage databases</p>
+ <br>
+<p><b>CMS: Content Management System</b>
+An application designed to control the creation, management, publishing and archiving of a site’s content
+CMS BENEFITS
+·         Updating content can be done through a WYSIWYG editor, making it easy for non-technical people to update site content
+·         Most CMS allow you to create user groups with various permission levels
+·         This flexibility allows users to create content, pages, and regions within the site without involving a designer
+·         Most CMS have plugins and extensions that add powerful features to sites
+EXPLORING CMS OPTIONS
+·         Some CMS are hosted online and only require an account to start building hosted sites
+·         Other CMS can be installed on your own web server
+·         Features and page customization vary greatly between CMS, be sure to research the features you need
+·         Popular CMS include Joomla, Drupal, Movable Type, ModX, Radiant, Wordpress, and Expression Engine</p>
+<br>
+<p><b>CDN: Content Delivery Network</b>: a system for delivering content over a distributed network of servers <br>
+-Used to serve static resources such as javascript libraries, video, or other site dependencies <br>
+<b>TYPES OF CDNs</b> <br> <ul>
+<li>Some CDNs host a single type of resource</li>
+<li>CDNs like YouTube serve not only as delivery networks, but content aggregators as well</li>
+<li>You can choose between numerous free or commercial CDN for dedicated service</li>
+<li>Popular CDNs include Akamai, CloudFare, Amazon’s CloudFront, EdgeCast, and Windows Azure</li>
+</ul> <br>
+<b>ISSUES:</b>
+Adds an additional layer of complexity <br>
+For dedicated resources, you don’t have the ability to create custom downloads or specific minified version <br>
+Certain security requirements might prevent the use of an external CDN <br>
+<b>CLOUD COMPUTING</b> <br>
+Distributed network of computers that can perform tasks by taking advantage of the scale and power of the network, Usually refers to distributed processes of the internet <br>
+<b>GITHUB</b> <br>
+Online distribution service that allows users to store repositories online that can be version controlled and shared by other users <br>
+Built around Git, an open source version control system <br>
+Allows you to manage projects, publish files, and store revisions <br>
+Offers both free and commercial plans <br>
+Features an easy to use web interface</p>
+ <br>
+<p><b>JAVASCRIPT LIBRARY</b>ies extend the functionality of native Javascript. They ranged from focused sets like Date.js to the broader task based Jquery <br>
+<i>PROS</i>: Using libraries makes the process of writing Javascript more efficient, You can often extend your own coding capabilities through libraries, The code is widely used and tested with contributors improving the code on a consistent basis <br>
+<i>CONS</i>: Libraries increase the side of your code, and often add additional server requests, You can become tied to specific library syntax, Without knowing native Javascript you’re not always making an informed choice as to when a library is appropriate</p>
+<br>
+<p><b>FRAMEWORKS AND BOILERPLATES </b><br>
+Collection of prebuilt CSS, HTML, and JavaScript files designed to speed development of sites <br>
+<i>BOILERPLATE</i>: A set of templates built around a specific starting point/goal <br>
+Meant to provide starting point for building sites/applications <br>
+<i>FRAMEWORKS</i>: A collection of assets designed to help build sites or applications <br>
+Could include CSS grids, JavaScript libraries or helpful scripts, and HTML templates <br>
+<b>COMPLEX UI FRAMEWORKS</b> <br>
+Frameworks like Bootstrap are built around developing front end of sites or applications. These UI Frameworks function more like development tools. While they add the most overhead, they also give developers the widest set of tools to work with.</p>
+<br>
+<p><b>MINIMAL FRAMEWORKS</b> <br>
+Typically have a singular goal or focus. Designed to have a small footprint and help out in specific areas
+The type of framework right for you will be largely based on project type <br>
+<b>PROTOTYPING</b> <br>
+Frameworks are often used to build HTML prototypes. Using a framework can dramatically speed up prototype development and iteration. In most cases framework code is NOT used in final product</p>
+<br>
+<p><b>CSS preprocessor</b> <br>
+Scripting language that extends the functionality of CSS and must be compiled into native CSS code before publishing <br>
+<u>-BENEFITS</u>: additional functionality that CSS lacks, their syntax makes writing CSS more efficient, Many browsers inconsistencies are dealt with automatically when the CSS is processed <br>
+<i>Sass</i>: Written in Ruby, two distinct syntaxes <br>
+<i>{Less}</i>: Witten in JavaScript, syntax close to native CSS <br>
+<i>Stylus</i>: Written in JavaScript, minimal syntax <br>
+<u>-CONS</u>: In team environments, or if the production code is shared, everyone will need to know the preprocessor syntax <br>
+Preprocessed CSS can be bloated and inefficient <br>
+Additional layer of complexity to workflows</p>
+
+
+                </blockquote>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Related Topics</h3>
+            </div>
+
+            <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-1">
+                <a href="web_2.0">
+                    <img class="img-responsive portfolio-item" src="../Img/web2.0.jpg" alt="Web 2.0">
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0">
+                <a href="sites_vs_apps">
+                    <img class="img-responsive portfolio-item" src="../Img/sva.png" alt="Sites vs Apps">
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0">
+                <a href="darkweb">
+                    <img class="img-responsive portfolio-item" src="../Img/darkweb.jpg" alt="Darkweb">
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0">
+                <a href="ui-ux">
+                    <img class="img-responsive portfolio-item" src="../Img/uiux.jpg" alt="UI/UX">
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0">
+                <a href="chrome_dev_summit">
+                    <img class="img-responsive portfolio-item" src="../Img/chromedev.png" alt="Chrome Dev Summit">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Other Subjects</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="../Coding">
+                    <img class="img-responsive portfolio-item" src="../Img/coding.jpg" alt="Coding">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="../Hosting">
+                    <img class="img-responsive portfolio-item" src="../Img/hosting.jpg" alt="Hosting">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="../Img/advertising.jpg" alt="Advertising">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="../The_Web">
+                    <img class="img-responsive portfolio-item" src="../Img/theweb.jpg" alt="The Web">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Project 0 2016 _ Credit to Portfolio_Item</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

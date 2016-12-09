@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project 0 - Coding - Grunt.js</title>
+
+    <link rel="shortcut icon" href="../favicon.ico" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Project 0</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../Physical_Side">Physical Side</a>
+                    </li>
+                    <li class="active">
+                        <a href="../Coding">Coding</a>
+                    </li>
+                    <li>
+                        <a href="../Hosting">Hosting</a>
+                    </li>
+                    <li>
+                        <a href="../Advertising">Advertising</a>
+                    </li>
+                    <li>
+                        <a href="../The_Web">The Web</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Project 0
+                    <small>Coding</small>
+                </h1>
+
+                <ul class="list-inline">
+                Home / Coding / 
+                    <li>
+                        <a href="semantic_versioning">Semantic Versioning</a>
+                    </li>
+                    <li>
+                        <a href="text_editors">Text Editors</a>
+                    </li>
+                    <li>
+                        <a href="utf-8">UTF-8</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap">Bootstrap</a>
+                    </li>
+                    <li>
+                        <a href="npm">NPM</a>
+                    </li>
+                    <li>
+                        Grunt.js
+                    </li>
+                </ul>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-4">
+                <img class="img-responsive" src="../Img/grunt.jpg">
+            </div>
+
+            <div class="col-md-8">
+                <h3>TOPIC: Grunt.js</h3>
+                <p>Behold, my scattered notes on Grunt.js.</p>
+
+<blockquote>
+<p><strong>Web Workflows with Grunt.js</strong></p>
+
+
+<p><strong>Terminal NPM(Node Package Manager)</strong>
+http://github.com/planetoftheweb/angulardata exercise files and project files, clone branch , add images file to Development subfolder</p>
+
+
+<p>1_02</p>
+    <p><i>Gitbash</i>: RUN npm init, give it a name, version 1.0.0, desc, entry point(index.js), <i>text command/git repo/keywords stay blank, author and confirm</i>
+RUN npm install -g grunt-cli
+RUN grunt --version to see version installed to confirm if it shows</p>
+
+<br>
+<p>1_03</p>
+<p>Create gruntfile.js <br>
+CODE<br>
+<code>module.exports = function(grunt) { <br>
+grunt .initConfig({ </p>
+
+
+<p>Concat : { <br>
+Dist : { <br>
+Src: [‘components/scripts/*.js], <br>
+Dest: ‘builds/development/js/script.js’ <br>
+} <br>
+}</p>
+
+
+<p>}); //initConfig</p>
+
+
+<p>grunt.loadNpmTasks(‘grunt-contrib-concat’);</p>
+
+
+<p>};  //wrapper function </code></p>
+
+
+<p><i>Go to directory, RUN npm install grunt --save-dev <br>
+        RUN npm install grunt-contrib-concat  --save-dev <br>
+        RUN grunt concat</i></p>
+
+<br>
+<p>1_04</p>
+<p>Gruntjs.com  ->plugins for useful plugins, such as concat <br>
+<strong>CODE CHANGES</strong> <br>
+<code>Concat : { <br>
+    <strong>Options: { <br>
+        Separator: ‘\n\n//--- etc--\n’, <br>
+        Banner: ^same as the above <br>
+},</strong></code> , save </p>>
+
+<p><i>RUN Grunt concat to confirm changes</i></p>
+
+<p><code>Dest: ‘builds/development/script.js’
+},
+<strong>Prod : {</strong> <br>
+    Src: [‘components/scripts/*.js], <br>
+Dest: ‘builds/<strong>production/</strong>js/script.js’</code></p>
+
+<p><i>RUN grunt contact:dist (specific command under js) <br>
+Remove prod and Production folder</i></p>
+
+<p><code>grunt.loadNpm  etc</p>
+
+<strong>grunt.registerTask(‘default’, [‘concat’); </strong> </code> (run different modules in order of []s
+<i>RUN grunt concat OR just grunt since concat is now default</i> <br>
+Also applies to subcommands (concat:dist)</p>
+
+<br>
+<p>1_05</p>
+<p>Sass helps with CSS, grunt-sass uses css (sass-compatibility.github.io)</p>
+
+
+<p></p><i>RUN npm install node-sass (requires NPM)
+    Npm install --save-dev grunt-sass</i>
+--[underneath the dist stuff</p>
+<p><code>} <br>
+} <strong>, //concat <br><br>
+
+Sass: { <br>
+    Dist: { <br>
+        Options: { <br>
+            Style: ‘expanded’ <br>
+        }, <br>
+        Files : [{ <br>
+            Src: ‘components/sass/style.scss’, <br>
+            Dest: ‘builds/development/css/style.css’ <br>
+}] <br>
+} <br>
+} //sass <br></strong>
+<s>Etc etc tasks</s> <br>
+<strong>grunt.loadNpmTasks(‘grunt-sass’);</strong> <br>
+<br>
+<s>Etc etc registerTask</s> <br>
+grunt.registerTask(‘default’, [‘concat’, <strong>‘sass’;</strong>] ]--
+</code></p>
+
+<p><i>Run grunt (see how it runs concat then sass?)</i></p>
+
+<br>
+<p>1_06</p>
+<p>Grunt plugins GRUNT -Contrib-watch to check if all commands run successfully <br>
+<i>Npm install grunt-contrib-watch --save-dev</i> <br>
+<code><s>add</s><strong>grunt.loadNpmTasks(‘grunt-contrib-concat’);</strong>  <s>ETC</s> <br>
+<s>Under sass add:</s> <br>
+    <strong>Watch: { <br>
+Options:{ <br>
+    Spawn: false <br>
+}, <br>
+Scripts: { <br>
+Files: [‘builds/development/**/*.html’, <br>
+‘components/scripts/**/*.js’, <br>
+‘components/sass/**/*.scss’], <br>
+Tasks: [‘concat’, ‘sass’] <br>
+} <br>
+} <br></strong></code>
+<i>Add ‘watch’ task to register defaults</i>
+
+<p><i>RUN grunt, change your index file or css slightly and notice how it runs again</i></p>
+<br>
+<p>1_07</p>
+
+
+<p><i>RUN Grunt-contrib-connect plugin --save dev</p> <br>
+<p>ADD</i> <br>
+<code>grunt.loadNpmTasks(‘grunt-contrib-connect’);</code> where necessary <br></p>
+
+<p><i>Add </i> <br>
+    <code><strong>Connect: {
+    Server: { <br>
+        Options: { <br>
+            Hostname: ‘localhost’, <br>
+            Port: 3000, <br>
+            Base: ‘builds/development/’, <br>
+            Livereload: true <br>
+} <br>
+} <br>
+},</strong></code> <br>
+ADD <code>‘connect’</code> to task defaults] <br>
+<i>RUN grunt to check</i></p>
+
+<p><strong>BOWER 2_01</strong> <br>
+<i>RUN npm install -g bower <br>
+RUN bower init </i><br>
+    &emsp;&emsp;Name: gruntworkflows <br>
+    &emsp;&emsp;Vers: 1.0.0 <br>
+    &emsp;&emsp;Descr: Workflows with Grunt Course on Lynda <br>
+    &emsp;&emsp;Main file:___ <br>
+    &emsp;&emsp;What types? <br>
+        &emsp;&emsp;&emsp;-globals <br>
+    &emsp;&emsp;Authors: <br>
+    &emsp;&emsp;License: MIT <br>
+    &emsp;&emsp;Homepage:__ <br>
+    &emsp;&emsp;Yes <br>
+    &emsp;&emsp;Yes <br>
+    &emsp;&emsp;Yes <br>
+    &emsp;&emsp;Confirm <br>
+<i>Bower.json file ready <br>
+RUN bower install --save bootstrap <br>
+    Bower install --save mustache </i><br>
+Bower has its own packages on bower.io</p>
+
+<br>
+<p>2_02</p> <br>
+
+<p><i>RUN npm install --save-dev Grunt-wiredep</i> <br>
+add wire-dep as NPM task, add wire-dep as a default task
+
+
+Add <code><<strong>wiredep: { <br>
+    Task: { <br>
+        Src: ‘builds/development/**/*.html’ <br>
+<br>
+} <br>
+},</strong></code></p>
+
+<p>Into index file
+In head:
+<code><strong><!-- bower: css--> <br>
+<!-- endbower--></strong></code> wherever you want the bower to run, add bower: js near bottom with JS where you want that to run <br>
+
+<i>RUN grunt and bootstrap adds the css/js necessary, let bower handle installing things for your site</i></p>
+
+<br>
+<p>2_03</p>
+<i>Run install grunt-bower-concat --save-dev </i><br>
+Add <code><strong>grunt-bower-concat</strong></code> as npm task <br>
+<code><strong>Bower-concat{ all: {dest: ‘builds/development/js/_bower.js’, <br>
+cssDest: ‘builds/development/css/_bower.css’} }, </strong></code><br>
+ADD <code><strong>‘bower_concat’</strong></code> in defaults <br>
+Change all bower sources to a single _bower.js or .css ref] <br>
+<i>RUN grunt</i></i>
+
+            </blockquote>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+
+       <!-- Related Topics Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h2 class="page-header">Related Topics</h2>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-2 col-sm-offset-1">
+                <a href="semantic_versioning">
+                    <img class="img-responsive portfolio-item" src="../Img/semver.png" alt="Semantic Versioning">
+                </a>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-2">
+                <a href="text_editors">
+                    <img class="img-responsive portfolio-item" src="../Img/texteditors.jpg" alt="Text Editors">
+                </a>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-2">        
+                <a href="utf-8">
+                    <img class="img-responsive portfolio-item" src="../Img/utf8.jpg" alt="UTF-8">
+                </a>
+            </div>
+            
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-2">
+                <a href="bootstrap">
+                    <img class="img-responsive portfolio-item" src="../Img/bootstrap.png" alt="Bootstrap">
+                </a>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-2">
+                <a href="npm">
+                    <img class="img-responsive portfolio-item" src="../Img/npm.jpg" alt="NPM">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Other Subjects</h3>
+            </div>
+
+            <div class="col-sm-3 col-sm-offset-0 col-xs-5 col-xs-offset-1">
+                <a href="../Physical_Side">
+                    <img class="img-responsive portfolio-item" src="../Img/physide.jpg" alt="Physical Side">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-5">
+                <a href="../Hosting">
+                    <img class="img-responsive portfolio-item" src="../Img/hosting.jpg" alt="Hosting">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-sm-offset-0 col-xs-5 col-xs-offset-1">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="../Img/advertising.jpg" alt="Advertising">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-5">
+                <a href="../The_Web">
+                    <img class="img-responsive portfolio-item" src="../Img/theweb.jpg" alt="The Web">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Project 0 2016 _ Credit to Portfolio_Item</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
